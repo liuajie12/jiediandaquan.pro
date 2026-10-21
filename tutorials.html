@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026全平台科学上网客户端使用教程指南 | Clash·小火箭·v2rayN·Sing-box - 节点大全</title>
+  <meta name="description" content="节点大全提供2026最新全平台客户端使用教程指南：涵盖Windows(Clash Verge Rev/v2rayN)、macOS、iOS小火箭(Shadowrocket)、安卓(CMFA/v2rayNG)及软路由的安装、订阅导入、TUN分流与常见故障排查。">
+  <meta name="keywords" content="科学上网客户端,使用教程,Clash教程,小火箭使用教程,Shadowrocket,v2rayN教程,Clash Verge,Sing-box,TUN模式,节点导入,节点大全">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container top-bar">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon">⚡</div>
+        <div>节点大全<span class="dot-pro">.pro</span></div>
+      </a>
+      <div class="header-actions">
+        <a href="deals.html" class="icon-btn" title="优惠专区">🎁</a>
+        <a href="free-nodes.html" class="icon-btn" title="免费节点">❤️</a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">首页</a></li>
+          <li><a href="free-nodes.html" class="nav-link">免费节点</a></li>
+          <li><a href="airports.html" class="nav-link">机场推荐</a></li>
+          <li><a href="reviews.html" class="nav-link">机场评测</a></li>
+          <li><a href="compare.html" class="nav-link">机场对比</a></li>
+          <li><a href="tutorials.html" class="nav-link active">使用教程 <span class="nav-badge-hot">全平台指南</span></a></li>
+          <li><a href="ai-tools.html" class="nav-link">AI工具</a></li>
+          <li><a href="deals.html" class="nav-link">优惠专区</a></li>
+          <li><a href="scam-alert.html" class="nav-link">跑路预警</a></li>
+          <li><a href="apple-id.html" class="nav-link">外区ID</a></li>
+          <li><a href="about.html" class="nav-link">关于</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 面包屑导航 -->
+  <div class="container breadcrumb-nav">
+    <ul class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="index.html">首页</a></li>
+      <li class="breadcrumb-sep">/</li>
+      <li>全平台科学上网客户端使用教程指南</li>
+    </ul>
+  </div>
+
+  <main class="container">
+    <div class="hero-box" style="padding: 20px 0 24px;">
+      <h1 class="hero-title" style="font-size:2.2rem;margin-bottom:10px;">
+        全平台科学上网<span class="gradient-word">客户端使用教程指南</span>
+      </h1>
+      <p class="hero-desc">
+        涵盖 Windows、macOS、iOS (iPhone/iPad)、Android 安卓及软路由全生态主流客户端，提供下载、一键订阅导入、TUN 模式与网络报错终极解决方案。
+      </p>
+
+      <!-- 快速平台定位锚点 -->
+      <div class="filter-tabs" style="justify-content:center;margin-top:20px;">
+        <a href="#windows" class="filter-tab">💻 Windows 教程</a>
+        <a href="#macos" class="filter-tab">🍎 macOS 教程</a>
+        <a href="#ios" class="filter-tab">📱 iOS (小火箭) 教程</a>
+        <a href="#android" class="filter-tab">🤖 Android 安卓教程</a>
+        <a href="#router" class="filter-tab">🐧 软路由 / Linux</a>
+        <a href="#troubleshoot" class="filter-tab">🛠️ 常见报错排查</a>
+      </div>
+    </div>
+
+    <!-- ══ 主流客户端特色概览矩阵 ══ -->
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="section-indicator"></span>
+        📦 2026 全平台推荐客户端下载与特性概览
+      </h2>
+      <span style="font-size:0.85rem;color:var(--text-secondary)">均为官方开源发布或 App Store 正版</span>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- 客户端 1: Clash Verge Rev -->
+      <div class="material-card">
+        <div class="card-header-banner banner-recommend">
+          <span class="card-badge gold">电脑端首选</span>
+          <span class="card-rating">推荐 ★4.98</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Clash Verge Rev</div>
+          <p class="card-subtitle">支持 Win / Mac / Linux · 基于 Clash Meta 内核打造的高颜值客户端</p>
+          <div class="card-tags">
+            <span class="chip-tag speed">TUN 虚拟网卡</span>
+            <span class="chip-tag iplc">自动智能分流</span>
+            <span class="chip-tag">开源无后门</span>
+          </div>
+          <div class="card-specs">
+            <div class="spec-item"><span class="spec-label">适用系统</span><span class="spec-val">Windows 10/11, macOS, Linux</span></div>
+            <div class="spec-item"><span class="spec-label">开发状态</span><span class="spec-val" style="color:var(--accent-green)">社区活跃持续更新</span></div>
+            <div class="spec-item"><span class="spec-label">协议支持</span><span class="spec-val">SS / Vmess / Trojan / Vless</span></div>
+            <div class="spec-item"><span class="spec-label">下载渠道</span><span class="spec-val">GitHub Release 官方</span></div>
+          </div>
+          <div class="card-footer">
+            <a href="#windows-verge" class="btn-outline-pill">图文教程 ↓</a>
+            <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases" target="_blank" rel="noopener noreferrer" class="btn-action">官方下载 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 客户端 2: Shadowrocket (小火箭) -->
+      <div class="material-card">
+        <div class="card-header-banner banner-node">
+          <span class="card-badge">iOS 生态神器</span>
+          <span class="card-rating">装机必备 ★4.99</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Shadowrocket (小火箭)</div>
+          <p class="card-subtitle">iPhone / iPad 第一梯队代理工具 · 需非中国大陆 Apple ID 下载</p>
+          <div class="card-tags">
+            <span class="chip-tag speed">扫码一秒导入</span>
+            <span class="chip-tag iplc">节点真连接延迟测试</span>
+            <span class="chip-tag">配置规则分流</span>
+          </div>
+          <div class="card-specs">
+            <div class="spec-item"><span class="spec-label">适用系统</span><span class="spec-val">iOS / iPadOS 12+</span></div>
+            <div class="spec-item"><span class="spec-label">账号要求</span><span class="spec-val"><a href="apple-id.html" style="color:var(--primary);font-weight:bold;">需外区 Apple ID ↗</a></span></div>
+            <div class="spec-item"><span class="spec-label">协议兼容</span><span class="spec-val">几乎支持目前所有主流协议</span></div>
+            <div class="spec-item"><span class="spec-label">商店定价</span><span class="spec-val">$2.99 (本站提供共享ID)</span></div>
+          </div>
+          <div class="card-footer">
+            <a href="#ios" class="btn-outline-pill">小火箭教程 ↓</a>
+            <a href="https://apps.apple.com/app/shadowrocket/id932747118" target="_blank" rel="noopener noreferrer" class="btn-action">App Store ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 客户端 3: v2rayN / v2rayNG -->
+      <div class="material-card">
+        <div class="card-header-banner banner-cyan">
+          <span class="card-badge">极客轻量开源</span>
+          <span class="card-rating">经典老牌 ★4.95</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">v2rayN (Win) / v2rayNG (安卓)</div>
+          <p class="card-subtitle">支持 Xray / Reality / Vless 单节点批量测试与高级路由控制</p>
+          <div class="card-tags">
+            <span class="chip-tag speed">批量测延迟</span>
+            <span class="chip-tag iplc">订阅分组管理</span>
+            <span class="chip-tag">内存占用仅几MB</span>
+          </div>
+          <div class="card-specs">
+            <div class="spec-item"><span class="spec-label">适用平台</span><span class="spec-val">Windows (v2rayN) / 安卓 (v2rayNG)</span></div>
+            <div class="spec-item"><span class="spec-label">特色优势</span><span class="spec-val">测试直观、适合单节点提取</span></div>
+            <div class="spec-item"><span class="spec-label">前沿协议</span><span class="spec-val">全面兼容 VLESS Reality</span></div>
+            <div class="spec-item"><span class="spec-label">许可协议</span><span class="spec-val">GPL-3.0 100% 开源</span></div>
+          </div>
+          <div class="card-footer">
+            <a href="#windows-v2rayn" class="btn-outline-pill">v2rayN 步骤 ↓</a>
+            <a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener noreferrer" class="btn-action">官方下载 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 客户端 4: Clash Meta for Android (CMFA) -->
+      <div class="material-card">
+        <div class="card-header-banner banner-deal">
+          <span class="card-badge">安卓端最强</span>
+          <span class="card-rating">推荐 ★4.93</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Clash Meta for Android</div>
+          <p class="card-subtitle">基于 Mihomo (Clash Meta) 打造的安卓强力内核客户端，分流规则更精准</p>
+          <div class="card-tags">
+            <span class="chip-tag speed">自动定时更新订阅</span>
+            <span class="chip-tag iplc">分应用代理控制</span>
+            <span class="chip-tag">暗黑模式UI</span>
+          </div>
+          <div class="card-specs">
+            <div class="spec-item"><span class="spec-label">适用系统</span><span class="spec-val">Android 7.0 及以上</span></div>
+            <div class="spec-item"><span class="spec-label">内核版本</span><span class="spec-val">Meta Core 增强版</span></div>
+            <div class="spec-item"><span class="spec-label">分流策略</span><span class="spec-val">自动测速选优 / 故障转移</span></div>
+            <div class="spec-item"><span class="spec-label">分流控制</span><span class="spec-val">可勾选指定 App 走代理</span></div>
+          </div>
+          <div class="card-footer">
+            <a href="#android" class="btn-outline-pill">安卓教程 ↓</a>
+            <a href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases" target="_blank" rel="noopener noreferrer" class="btn-action">官方下载 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 客户端 5: Sing-box -->
+      <div class="material-card">
+        <div class="card-header-banner" style="background:linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
+          <span class="card-badge">新一代全平台通用</span>
+          <span class="card-rating">前沿新星 ★4.90</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Sing-box 通用核心</div>
+          <p class="card-subtitle">革命性通用通用代理平台，跨端支持 iOS、Android、Windows、macOS</p>
+          <div class="card-tags">
+            <span class="chip-tag speed">高性能极低内存</span>
+            <span class="chip-tag iplc">Hysteria 2原生支持</span>
+            <span class="chip-tag">全新通用语法</span>
+          </div>
+          <div class="card-specs">
+            <div class="spec-item"><span class="spec-label">开发者</span><span class="spec-val">SagerNet 社区团队</span></div>
+            <div class="spec-item"><span class="spec-label">客户端形态</span><span class="spec-val">全平台均有图形客户端</span></div>
+            <div class="spec-item"><span class="spec-label">性能特征</span><span class="spec-val">无垃圾回收卡顿、高吞吐</span></div>
+            <div class="spec-item"><span class="spec-label">协议支持</span><span class="spec-val">TUIC / Hy2 / Reality / SS</span></div>
+          </div>
+          <div class="card-footer">
+            <a href="#router" class="btn-outline-pill">查看配置 ↓</a>
+            <a href="https://github.com/SagerNet/sing-box/releases" target="_blank" rel="noopener noreferrer" class="btn-action">官方下载 ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 客户端 6: 软路由与 ShellCrash -->
+      <div class="material-card">
+        <div class="card-header-banner" style="background:linear-gradient(135deg, #374151 0%, #111827 100%);">
+          <span class="card-badge">全屋智能免配置</span>
+          <span class="card-rating">家庭必备 ★4.94</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">ShellCrash / OpenClash</div>
+          <p class="card-subtitle">直接部署在路由器或软路由上，电视机、Switch、手机全屋无感翻墙</p>
+          <div class="card-tags">
+            <span class="chip-tag speed">电视盒子秒开4K</span>
+            <span class="chip-tag iplc">游戏主机NAT直通</span>
+            <span class="chip-tag">免设备客户端</span>
+          </div>
+          <div class="card-specs">
+            <div class="spec-item"><span class="spec-label">硬件支持</span><span class="spec-val">小米/红米/华硕/OpenWrt</span></div>
+            <div class="spec-item"><span class="spec-label">安装方式</span><span class="spec-val">SSH 一键命令脚本快速安装</span></div>
+            <div class="spec-item"><span class="spec-label">管理界面</span><span class="spec-val">本地网页控制台 (Yacd / Metacubexd)</span></div>
+            <div class="spec-item"><span class="spec-label">分流效果</span><span class="spec-val">局域网全设备透明代理</span></div>
+          </div>
+          <div class="card-footer">
+            <a href="#router" class="btn-outline-pill">路由器教程 ↓</a>
+            <a href="https://github.com/juewuy/ShellCrash" target="_blank" rel="noopener noreferrer" class="btn-action">项目主页 ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══ 详细图文指引区 ══ -->
+    <div class="content-wrapper" style="margin-top:36px;">
+      <div class="article-main">
+
+        <!-- ══ Windows 教程 ══ -->
+        <section id="windows" style="margin-bottom:48px;">
+          <h2 style="margin-top:0;padding-bottom:8px;border-bottom:2px solid var(--primary-bg-soft);">
+            💻 Windows 平台客户端使用教程指南
+          </h2>
+
+          <div id="windows-verge" style="margin-top:20px;">
+            <h3 style="color:var(--primary);">方案一：Clash Verge Rev（强烈推荐电脑用户首选）</h3>
+            <p>
+              老版 Clash for Windows (CFW) 停止维护后，<strong>Clash Verge Rev</strong> 已成为目前 Windows 上最流行、更新最频繁的现代客户端，界面极简优雅且原生支持 TUN 虚拟网卡模式。
+            </p>
+
+            <div class="feature-box" style="margin:16px 0;">
+              <h4>第一步：下载与安装</h4>
+              <p>前往官方 Releases 页面，根据电脑配置下载对应安装包：</p>
+              <ul style="padding-left:20px;line-height:1.8;">
+                <li>64位 Windows 常见推荐：<code>Clash.Verge_x.x.x_x64-setup.exe</code></li>
+                <li>安装过程中若弹出 Windows Defender 拦截，点击「更多信息」->「仍要运行」即可。</li>
+              </ul>
+              <div style="margin-top:10px;">
+                <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases" target="_blank" rel="noopener noreferrer" class="btn-action" style="padding:6px 14px;font-size:0.85rem;">前往 GitHub Releases 官方下载 ↗</a>
+              </div>
+            </div>
+
+            <div class="feature-box" style="margin:16px 0;">
+              <h4>第二步：获取并导入节点订阅</h4>
+              <p>1. 前往您所使用的 <a href="airports.html" style="color:var(--primary);font-weight:bold;">15家专线机场</a> 个人中心，或前往本站 <a href="free-nodes.html" style="color:var(--primary);font-weight:bold;">免费节点专区</a>，点击「复制 Clash 订阅链接」；</p>
+              <p>2. 打开 Clash Verge Rev 客户端，点击左侧菜单栏的 <strong>「订阅 (Profiles)」</strong>；</p>
+              <p>3. 在顶部输入框粘贴刚才复制的订阅 URL 地址，点击右侧的 <strong>「导入 (Import)」</strong> 按钮；</p>
+              <p>4. 导入成功后，鼠标<strong>右键点击该配置卡片</strong>，选择 <strong>「使用 (Use)」</strong>（卡片右上角亮起绿色对勾即为生效）。</p>
+            </div>
+
+            <div class="feature-box" style="margin:16px 0;">
+              <h4>第三步：开启系统代理与选择分流节点</h4>
+              <p>1. 点击左侧 <strong>「代理 (Proxies)」</strong>，在「规则 (Rule)」模式下点击测试延迟，展开节点列表，选择延迟低且绿色的节点（如香港、日本、美国 IPLC 节点）；</p>
+              <p>2. 点击左侧 <strong>「设置 (Settings)」</strong>，找到 <strong>「系统代理 (System Proxy)」</strong> 开关并打开，即可在 Chrome/Edge 浏览器中顺畅访问海外网络；</p>
+              <p>3. <strong>TUN 模式（可选进阶）：</strong>若玩外服游戏、使用 Telegram 桌面版或终端命令行代理，可开启「TUN 模式」（首次开启会提示安装虚拟网卡驱动，点击确认即可）。</p>
+            </div>
+          </div>
+
+          <div id="windows-v2rayn" style="margin-top:30px;">
+            <h3 style="color:var(--primary);">方案二：v2rayN（适合极客、单节点导入与高级调试）</h3>
+            <p><strong>第一步：下载核心包：</strong>下载 <code>v2rayN-with-dependencies.zip</code>（自带完整运行时依赖），解压后运行 <code>v2rayN.exe</code>。</p>
+            <p><strong>第二步：添加订阅与测速：</strong></p>
+            <ul style="padding-left:20px;line-height:1.8;">
+              <li>点击顶部菜单 <strong>「订阅分组」</strong> -> <strong>「订阅分组设置」</strong> -> <strong>「添加」</strong>；</li>
+              <li>在备注填写机场名称，在「可选地址 (URL)」填入订阅链接，点击保存；</li>
+              <li>点击顶部菜单 <strong>「订阅分组」</strong> -> <strong>「更新全部订阅 (不通过代理)」</strong>，即可加载出全部节点；</li>
+              <li>选中所有节点按快捷键 <code>Ctrl + R</code> 进行「测试真实延迟」，选择数值在 100ms~300ms 左右的可用节点，按回车激活。</li>
+            </ul>
+            <p><strong>第三步：开启代理：</strong>在屏幕右下角托盘图标右键 -> 勾选「自动配置系统代理」，路由规则推荐选择「绕过大陆 (Whitelist)」。</p>
+          </div>
+        </section>
+
+        <!-- ══ macOS 教程 ══ -->
+        <section id="macos" style="margin-bottom:48px;">
+          <h2 style="padding-bottom:8px;border-bottom:2px solid var(--primary-bg-soft);">
+            🍎 macOS 苹果电脑平台配置教程
+          </h2>
+          <p>macOS 上同样首选 <strong>Clash Verge Rev for Mac</strong>，兼容 Intel 芯片与 Apple Silicon (M1/M2/M3/M4) 系列。</p>
+
+          <div class="feature-box" style="margin:16px 0;">
+            <h4>安装与系统授权步骤：</h4>
+            <ol style="padding-left:20px;line-height:1.8;">
+              <li>根据 Mac 芯片下载对应 <code>.dmg</code> 安装包（M系列芯片请下载 <code>_aarch64.dmg</code>，Intel 芯片下载 <code>_x64.dmg</code>）；</li>
+              <li>打开 dmg 文件，将「Clash Verge」图标拖动到「Applications (应用程序)」文件夹；</li>
+              <li>首次启动若提示无法打开，请前往 Mac <strong>「系统设置」->「隐私与安全性」</strong>，下滑找到该应用点击<strong>「仍要打开」</strong>；</li>
+              <li>导入订阅后，在左侧打开「系统代理」开关即可顺畅出海。若提示需要网络权限，输入当前 Mac 的管理员开机密码授予即可。</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- ══ iOS (iPhone/iPad) 教程 ══ -->
+        <section id="ios" style="margin-bottom:48px;">
+          <h2 style="padding-bottom:8px;border-bottom:2px solid var(--primary-bg-soft);">
+            📱 iOS (iPhone / iPad) 教程：Shadowrocket (小火箭)
+          </h2>
+          <p>
+            在苹果 iOS 生态中，<strong>Shadowrocket（俗称小火箭）</strong>是公认体验最好、上手最快的代理客户端。
+          </p>
+
+          <div class="alert-box alert-warning">
+            <div>
+              <strong>特别注意：</strong>中国大陆区 App Store 已下架所有翻墙代理软件。请勿在系统「设置」中登录外区 iCloud（防止锁机），必须且只能在 <strong>「App Store 应用商店」</strong> 退出原有账号，登录外区 Apple ID 进行下载。可查阅本站 <a href="apple-id.html" style="color:var(--primary);font-weight:bold;">外区 Apple ID 免费共享与注册教程 ↗</a>。
+            </div>
+          </div>
+
+          <div class="feature-box" style="margin:16px 0;">
+            <h4>详细配置步骤：</h4>
+            <p><strong>步骤 1：一键快速导入订阅</strong></p>
+            <ul style="padding-left:20px;line-height:1.8;">
+              <li><strong>方式 A（一键唤醒）：</strong>在 Safari 浏览器中登录您的 <a href="airports.html" style="color:var(--primary);font-weight:bold;">机场后台</a>，找到「一键导入小火箭」按钮点击，会自动拉起 App 并保存节点；</li>
+              <li><strong>方式 B（手动扫码/粘贴）：</strong>打开 Shadowrocket 首页，点击右上角 <strong>「+」</strong> 号，在「类型」下拉菜单中选择 <strong>Subscribe (订阅)</strong>；在「URL」栏中粘贴您的订阅地址，备注填写名称，点击右上角「完成」即可同步所有节点。</li>
+            </ul>
+
+            <p style="margin-top:14px;"><strong>步骤 2：选择节点与测速</strong></p>
+            <p>在首页找到导入好的订阅列表，点击「节点连通性测试」，测出的毫秒数越小代表响应越快。点击选中你想要使用的节点（节点前方出现黄色/绿色圆点即为选中）。</p>
+
+            <p style="margin-top:14px;"><strong>步骤 3：全局路由与启动 VPN</strong></p>
+            <p>将首页下方的「全局路由」设置为 <strong>「配置 (Config)」</strong>（该模式可智能分流：访问百度/微信直连走本地网络，访问 YouTube/Google 走代理节点）；</p>
+            <p>打开小火箭顶部最上方的第一行开关，首次连接会弹出 iOS 系统提示「Shadowrocket 想要添加 VPN 配置」，点击「允许 (Allow)」并输入锁屏密码即完成连接。</p>
+          </div>
+        </section>
+
+        <!-- ══ Android (安卓) 教程 ══ -->
+        <section id="android" style="margin-bottom:48px;">
+          <h2 style="padding-bottom:8px;border-bottom:2px solid var(--primary-bg-soft);">
+            🤖 Android (安卓手机/平板/电视盒子) 教程
+          </h2>
+          <p>安卓端推荐安装 <strong>Clash Meta for Android (CMFA)</strong> 或 <strong>v2rayNG</strong>。</p>
+
+          <div class="feature-box" style="margin:16px 0;">
+            <h4>Clash Meta for Android 简明操作：</h4>
+            <ol style="padding-left:20px;line-height:1.8;">
+              <li>安装并打开 App，点击底部的 <strong>「配置 (Profiles)」</strong> 选项；</li>
+              <li>点击右上角的 <strong>「+」</strong> 号 -> 选择 <strong>「URL 导入 (从 URL 获取)」</strong>；</li>
+              <li>在「名称」中随意输入，在「URL」栏粘贴机场或本站免费节点的订阅链接，点击右上角「保存」下载配置；</li>
+              <li>返回主页面，点击中部的「配置」选中刚才下载好的卡片；</li>
+              <li>点击主屏幕中部的总开关（启动），首次运行允许系统建立 VPN 连接权限即可；</li>
+              <li>在「代理」页面中可以按延迟排序选择最优质的专线节点。</li>
+            </ol>
+            <div style="margin-top:12px;">
+              <a href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases" target="_blank" rel="noopener noreferrer" class="btn-action" style="padding:6px 14px;font-size:0.85rem;">下载 Clash Meta 安卓版 APK ↗</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══ 软路由 / Linux 教程 ══ -->
+        <section id="router" style="margin-bottom:48px;">
+          <h2 style="padding-bottom:8px;border-bottom:2px solid var(--primary-bg-soft);">
+            🐧 软路由、家庭路由器与 Linux 平台使用指引
+          </h2>
+          <p>
+            如果你使用的是小米、红米、华硕、中兴或自建 OpenWrt 软路由，可以在路由器底层直接运行代理内核，实现全屋手机、电视、PS5/Switch 游戏机免客户端无感科学上网。
+          </p>
+
+          <div class="feature-box" style="margin:16px 0;">
+            <h4>ShellCrash 路由器一键脚本安装步骤：</h4>
+            <p>1. 路由器开启 SSH 权限，使用终端或 PuTTY 工具通过 SSH 连接到路由器控制台；</p>
+            <p>2. 执行以下开源一键安装脚本命令：</p>
+            <div class="code-box">
+              <div class="code-box-header">
+                <span>ShellCrash 官方一键安装命令</span>
+                <span style="color:var(--accent-green)">● 开源脚本</span>
+              </div>
+              <div>export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null</div>
+            </div>
+            <p>3. 脚本会自动引导你选择内核类型，推荐选择 <strong>Meta 内核</strong>；</p>
+            <p>4. 按照提示输入订阅链接地址，开启开机自启与透明代理重定向；</p>
+            <p>5. 访问 <code>http://路由器IP:9999/ui</code> 即可打开可视化仪表盘（Yacd / Metacubexd）实时切换节点与查看流量。</p>
+          </div>
+        </section>
+
+        <!-- ══ 常见报错与排错速查 (FAQ) ══ -->
+        <section id="troubleshoot" style="margin-bottom:30px;">
+          <h2 style="padding-bottom:8px;border-bottom:2px solid var(--primary-bg-soft);">
+            🛠️ 新手常见报错与故障排错速查手册 (FAQ)
+          </h2>
+
+          <div class="faq-grid">
+            <div class="faq-card">
+              <h3>Q1：为什么在客户端点击测速全部超时（Timeout）或显示 100% 丢包？</h3>
+              <p>
+                <strong>排查要点：</strong><br>
+                1. <strong>电脑/手机系统时间误差：</strong>这是 90% 用户测速失败的原因。TLS 加密连接要求本地设备时间与互联网国际标准时间误差不能超过 90 秒。请前往系统设置将时间调整为<strong>「自动同步网络时间」</strong>。<br>
+                2. <strong>订阅链接失效或欠费：</strong>检查所用机场套餐是否已用尽流量，或前往本站 <a href="scam-alert.html" style="color:var(--accent-pink);font-weight:bold;">跑路预警专区</a> 确认是否遭遇线路封禁。
+              </p>
+            </div>
+
+            <div class="faq-card">
+              <h3>Q2：节点测试有几十毫秒延迟，但浏览器打开 YouTube/Google 依然提示「无法访问此网站」？</h3>
+              <p>
+                <strong>排查要点：</strong><br>
+                1. <strong>系统代理没有开启：</strong>检查 Clash Verge 的「系统代理 (System Proxy)」或 v2rayN 托盘菜单的代理开关是否亮起；<br>
+                2. <strong>浏览器多余代理插件冲突：</strong>若浏览器安装了 SwitchyOmega 等插件，必须将其模式改为「系统代理」，否则浏览器不会走客户端流量。
+              </p>
+            </div>
+
+            <div class="faq-card">
+              <h3>Q3：打开代理后，国内软件（微信收发图、淘宝、B站刷视频）变得极慢甚至打不开？</h3>
+              <p>
+                <strong>排查要点：</strong><br>
+                您的路由模式被误设置成了 <strong>「全局 (Global)」</strong>，导致所有国内流量都绕道海外节点。<strong>解决办法：</strong>在客户端切换回 <strong>「规则 (Rule)」</strong> 或小火箭的 <strong>「配置 (Config)」</strong> 模式。在此模式下，系统会根据内置的大陆 IP 白名单自动分流，国内流量完全直连、零延迟、不消耗代理流量。
+              </p>
+            </div>
+
+            <div class="faq-card">
+              <h3>Q4：Clash 开启「TUN 模式」提示失败或报错？</h3>
+              <p>
+                <strong>排查要点：</strong><br>
+                TUN 模式需要底层安装虚拟网卡，请先彻底关闭客户端，以<strong>「以管理员身份运行」</strong>重新启动 Clash Verge Rev，再进入设置安装 TUN Service 服务。
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 侧边推荐导航 -->
+      <aside class="sidebar">
+        <div class="widget-card">
+          <h3 class="widget-title">📌 快速跳转导航</h3>
+          <ul class="widget-list">
+            <li class="widget-list-item"><a href="#windows">💻 Windows 客户端</a></li>
+            <li class="widget-list-item"><a href="#macos">🍎 macOS 苹果电脑</a></li>
+            <li class="widget-list-item"><a href="#ios">📱 iOS 小火箭配置</a></li>
+            <li class="widget-list-item"><a href="#android">🤖 Android 安卓平台</a></li>
+            <li class="widget-list-item"><a href="#router">🐧 软路由与 ShellCrash</a></li>
+            <li class="widget-list-item"><a href="#troubleshoot">🛠️ 常见打不开排错</a></li>
+          </ul>
+        </div>
+
+        <div class="widget-card">
+          <h3 class="widget-title">🍎 下载小火箭缺少美区ID？</h3>
+          <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:12px;">直接获取本站维护的美区/外区 Apple ID 共享账号，免注册下载：</p>
+          <a href="apple-id.html" class="btn-primary-pill" style="width:100%;justify-content:center;box-sizing:border-box;">获取免费外区账号 ↗</a>
+        </div>
+
+        <div class="widget-card">
+          <h3 class="widget-title">⚡ 寻找高速稳定专线？</h3>
+          <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:12px;">客户端装好了没有优质订阅？查看本站 15 家实测梯队推荐：</p>
+          <a href="airports.html" class="btn-outline-pill" style="width:100%;justify-content:center;box-sizing:border-box;">查看15家梯队推荐 ↗</a>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- 移动端侧边抽屉 -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo" style="color:var(--primary)">
+        <span class="logo-icon" style="background:var(--primary);color:#fff;">⚡</span>
+        <span>节点大全</span>
+      </div>
+      <button class="drawer-close" id="drawerClose">✕</button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="index.html" class="drawer-nav-link">🏠 首页</a></li>
+      <li><a href="free-nodes.html" class="drawer-nav-link">🆓 免费节点</a></li>
+      <li><a href="airports.html" class="drawer-nav-link">🏆 机场推荐</a></li>
+      <li><a href="reviews.html" class="drawer-nav-link">📊 机场评测</a></li>
+      <li><a href="compare.html" class="drawer-nav-link">⚖️ 机场对比</a></li>
+      <li><a href="tutorials.html" class="drawer-nav-link active">📖 使用教程</a></li>
+      <li><a href="ai-tools.html" class="drawer-nav-link">🤖 AI工具</a></li>
+      <li><a href="deals.html" class="drawer-nav-link">🎁 优惠专区</a></li>
+      <li><a href="scam-alert.html" class="drawer-nav-link">⚠️ 跑路预警</a></li>
+      <li><a href="apple-id.html" class="drawer-nav-link">🍎 外区ID</a></li>
+      <li><a href="about.html" class="drawer-nav-link">ℹ️ 关于本站</a></li>
+    </ul>
+  </aside>
+
+  <!-- 页脚四色条 -->
+  <footer class="site-footer">
+    <div class="footer-accent-stripe">
+      <div class="footer-stripe-1"></div>
+      <div class="footer-stripe-2"></div>
+      <div class="footer-stripe-3"></div>
+      <div class="footer-stripe-4"></div>
+    </div>
+    <div class="container footer-inner">
+      <div class="footer-bottom">
+        <div>© 2026 JiedianDaquan.pro 节点大全. 全平台使用手册持续更新.</div>
+        <div><a href="free-nodes.html">获取最新订阅</a> | <a href="airports.html">高稳定性专线</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

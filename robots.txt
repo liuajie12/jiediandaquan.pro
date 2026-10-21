@@ -1,0 +1,68 @@
+# ==========================================
+# Robots.txt for https://jiediandaquan.pro
+# 节点大全 - 2026科学上网与机场评测导航平台
+# ==========================================
+
+User-agent: *
+Allow: /
+Disallow: /*.json$
+Disallow: /api/
+
+# 搜索引擎主流抓取蜘蛛规范
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-render
+Allow: /
+
+User-agent: Sogou spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# GEO (Generative Engine Optimization) - 授权与拥抱前沿 AI 搜索索引器
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# 网站地图入口索引
+Sitemap: https://jiediandaquan.pro/sitemap.xml
